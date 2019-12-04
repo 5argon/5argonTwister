@@ -6,7 +6,7 @@ function readFiles(dirname, onFileContent) {
     filenames.forEach(function (filename) {
         if (filename != ".DS_Store") {
             const content = fs.readFileSync(dirname + filename, 'utf-8')
-            console.log(filename)
+            console.log("Compiling : " + filename)
             onFileContent(filename, content);
         }
     })
@@ -29,11 +29,10 @@ readFiles("./Mappings/", (name, content) => {
     const receiveEncoder = Array(64).fill(false)
     const receiveButton = Array(64).fill(false)
 
-    const paramToIndex = {}
-
     const mapKey = name.replace(/\.[^/.]+$/, "")
     Object.keys(jsonObject).forEach(key => {
         const obj = jsonObject[key]
+        console.log("- Parameter : " + key)
         obj.color = constants["_colors"][obj.color]
 
         if ("position" in obj) {
@@ -76,6 +75,8 @@ readFiles("./Mappings/", (name, content) => {
             encoderColorMatrix[obj.position[0]] = obj.color
         }
     });
+    
+    //Bake in data-oriented array so Max patch has easier time reading them.
     jsonObject.chokeMatrix = chokeMatrix
     jsonObject.receiveEncoder = receiveEncoder
     jsonObject.receiveButton = receiveButton 
@@ -98,24 +99,6 @@ readFiles("./Mappings/", (name, content) => {
     map[mapKey] = jsonObject;
 }, console.log)
 
-var reverseMap = new Array(64)
-
-Object.keys(map).forEach(k => {
-    Object.keys(map[k]).forEach(j => {
-        const param = map[k][j];
-        switch(param.type)
-        {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-        }
-    })
-})
-
-console.log(map)
 
 fs.writeFileSync("./compiled.json", JSON.stringify(map))
 console.log("Preprocessed JSON files.")
