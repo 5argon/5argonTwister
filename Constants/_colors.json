@@ -1,0 +1,26 @@
+{
+    "blue": 1,
+    "sky": 14,
+    "aqua": 25,
+    "aquamarine": 38,
+    "lime": 52,
+    "chartreuse": 59,
+    "pear": 61,
+    "yellow": 63,
+    "gold": 65,
+    "orange": 68,
+    "vermillion": 74,
+    "red": 82,
+    "rose": 88,
+    "pink": 96,
+    "magenta": 107,
+    "purple": 109,
+    "violet": 111,
+    "lavender": 113,
+    "neon": 115,
+    "ultramarine": 118,
+
+    "deviceOn" : 63,
+    "dryWet":65,
+    "outputGain": 82
+}
