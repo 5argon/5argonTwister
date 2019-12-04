@@ -6,27 +6,27 @@
     },
     "Output" :
     {
-        "color": "red",
+        "color": "outputGain",
         "position": [1,3,1]
     },
     "Drive" :
     {
-        "color": "red",
+        "color": "vermillion",
         "position": [1,4,1]
     },
     "Tone" :
     {
-        "color": "aqua",
+        "color": "vermillion",
         "position": [1,4,2]
     },
     "Bias" :
     {
-        "color": "orange",
+        "color": "vermillion",
         "position": [1,4,3]
     },
     "Envelope" :
     {
-        "color": "purple",
+        "color": "pear",
         "position": [1,2,4]
     },
     "Attack" :

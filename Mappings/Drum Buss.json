@@ -1,28 +1,28 @@
 {
     "Drive" :
     {
-        "color": "red",
+        "color": "vermillion",
         "position": [1,1,1]
     },
     "Drive Type":
     {
-        "color": "sky",
+        "color": "aqua",
         "position": [
-            [1,1,1],
-            [1,2,1],
-            [1,3,1]
+            [2,1,1],
+            [2,2,1],
+            [2,3,1]
         ],
         "type" : "enum"
     },
     "Trim" :
     {
-        "color": "red",
+        "color": "vermillion",
         "position": [1,2,1]
     },
     "Compressor On" :
     {
-        "color": "red",
-        "position": [1,3,2],
+        "color": "pink",
+        "position": [1,3,1],
         "type" : "toggle"
     },
     "Crunch" :
@@ -42,17 +42,17 @@
     },
     "Boom Amt" :
     {
-        "color": "red",
+        "color": "violet",
         "position": [1,1,3]
     },
     "Boom Freq" :
     {
-        "color": "red",
+        "color": "violet",
         "position": [1,2,3]
     },
     "Boom Decay" :
     {
-        "color": "red",
+        "color": "violet",
         "position": [1,3,3]
     },
     "Boom Audition" :

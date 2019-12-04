@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 449.0, 80.0, 1075.0, 787.0 ],
+		"rect" : [ 331.0, 80.0, 1075.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 539.0, 548.5, 24.0, 24.0 ]
+					"patching_rect" : [ 441.0, 535.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -92,11 +92,11 @@
 					"comment" : "Bang exists in mapping",
 					"id" : "obj-9",
 					"ignoreclick" : 1,
-					"index" : 2,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 616.5, 30.0, 30.0 ]
+					"patching_rect" : [ 441.0, 603.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -104,11 +104,11 @@
 				"box" : 				{
 					"comment" : "Dictionary of device",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 429.0, 532.5, 30.0, 30.0 ]
+					"patching_rect" : [ 525.0, 532.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -369,7 +369,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -385,7 +385,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-43", 0 ]
 				}
 
